@@ -4,14 +4,14 @@ const spies = require('chai-spies');
 chai.use(spies);
 
 describe('2+2 =4', function(){
-  it('2+2 =4', function(){
+  xit('2+2 =4', function(){
     expect(2+2).to.equal(4);
   })
 })
 
 describe("Testing asynchronous code", function(){
   describe("setTimeOut", function(){
-    it('wait 1 second', function(done){
+    xit('wait 1 second', function(done){
       var startTime = Date.now();
       setTimeout(function(){
         var duration =  Date.now() - startTime;
@@ -25,7 +25,7 @@ describe("Testing asynchronous code", function(){
 
 
 describe('Test forEach', function(){
-  it('Spy on forEach', function(){
+  xit('Spy on forEach', function(){
       var arr = [1,2,3,4,5];
       var logger = function(i){
         console.log(i);
